@@ -1,0 +1,16 @@
+Jared Wasserman
+
+1) You can use strcat() to concatenate two strings in. It combines the two strings by appending the second string to the first string. You could concatenate two strings without strcat() by filling a new array with all the characters from the first string except the string terminator and then all the characters from the second string (including the string terminator).
+
+2) You cannot initialize a static array without a size. It is not initialized with an automatic size.
+
+3) To create a multideminesional of size 64 the product of the two dimensions must equal 64. For example a 2 by 32 array or a 32 by 2 array has a size of 64. Several other pairs of number will also work. 
+
+4)
+	strcmp() compares two strings and returns 0 if they are the same. If they are different it returns how far away the first characters that are different are from each other. That number will be positive if the second string comes before the first string and a negative number if the first string comes before the second string.
+
+	fgets() takes a string of input from the user. It reads the string from the keyboard and assigns to the array you give it. If the string entered is too long then it will truncate the string. fgets() does not add the string teminator to the end of the string, so it is good practice to add it by doing name[strlen(name)-1]='\0';.
+
+	strcat() concatenates two strings. The concatenated string is now the value of the first string. For example: strcat(s1,s2) will store the concatenated string in s1.
+
+	strlen() returns the length of a string. It does not count the string terminator as a character of string.
